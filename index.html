@@ -3,19 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yash Goel - Software Developer Portfolio</title>
-   <link rel="stylesheet" href="index.css">
+    <title>Yash Goel - Frontend Developer Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
     
-       <!-- Mobile Menu Toggle -->
-             <div class="mobile-menu-toggle" id="mobileMenuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-   <nav id="navbar">
+    <nav id="navbar">
         <div class="container">
             <a href="#home" class="logo">Yash Goel</a>
 
@@ -25,7 +19,7 @@
                 <span></span>
             </div>
 
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -51,77 +45,70 @@
         
         <div class="hero-content">
             <div class="hero-layout">
-                <div class="hero-text">
+                <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
                     <h1>Yash Goel</h1>
-                    <p>Software Developer</p>
-                    <p class="subtitle">Full-Stack Engineer specializing in MERN Stack & Backend Development</p>
+                    <p>Frontend Developer @ JTG</p>
+                    <p class="subtitle">Building high-performance web architectures, fluid user experiences, and optimized browser systems.</p>
                     <div class="hero-buttons">  
                         <a href="#projects" class="cta-button">View My Work</a>
                         <a href="mailto:yashgoel711@gmail.com" class="cta-button secondary">Get In Touch</a>
                     </div>
                 </div>
                 
-                <div class="hero-image-container">
+                <div class="hero-image-container" data-aos="fade-left" data-aos-duration="1000">
                     <div class="hero-image">
-                        <!-- Replace this emoji with an actual image when you have one -->
-                        <img src="/assests/NoBGphoto.PNG" alt="Yash Goel">
-                        
+                        <img src="./assests/NoBGphoto.PNG" alt="Yash Goel">
                     </div>
                 </div>
             </div>
             
-            <div class="hero-stats">
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+                <div class="hero-stat">
+                    <span class="hero-stat-number">MERN Stack</span>
+                    <span class="hero-stat-label">Core Architecture Focus</span>
+                </div>
                 <div class="hero-stat">
                     <span class="hero-stat-number">10+</span>
                     <span class="hero-stat-label">Projects Completed</span>
                 </div>
                 <div class="hero-stat">
-                    <span class="hero-stat-number">2+</span>
-                    <span class="hero-stat-label">Years Experience</span>
-                </div>
-                <div class="hero-stat">
-                    <span class="hero-stat-number">4 Time</span>
+                    <span class="hero-stat-number">4-Time</span>
                     <span class="hero-stat-label">Hackathon Finalist</span>
                 </div>
             </div>
             
-            <div class="hero-social">
-                <a href="mailto:yashgoel711@gmail.com" class="social-icon" title="Email"><img width="55px"  src="./assests/email-logo-png-13.png" alt=""></a>
-                <a href="https://www.linkedin.com/in/yash-goel-65aa64273/" class="social-icon" title="LinkedIn"><img width="60px"  src="./assests/linkedin-logo-linkedin-icon-transparent-free-png.webp" alt=""></a>
-                <a href="https://github.com/yashgoel-711" class="social-icon" title="GitHub"><img width="55px"  src="./assests/github_PNG80.png" alt=""></a>
-                <a href="https://wa.me/qr/AFDQEH76EP5CO1" class="social-icon" title="Phone"><img width="70px"  src="./assests/WhatsApp-logo.png" alt=""></a>
+            <div class="hero-social" data-aos="zoom-in" data-aos-delay="500">
+                <a href="mailto:yashgoel711@gmail.com" class="social-icon" title="Email"><img src="./assests/email-logo.png" alt="Email"></a>
+                <a href="https://www.linkedin.com/in/yash-goel-65aa64273/" class="social-icon" title="LinkedIn"><img src="./assests/linkedin-logo.png" alt="LinkedIn"></a>
+                <a href="https://github.com/yashgoel-711" class="social-icon" title="GitHub"><img src="./assests/github-logo.png" alt="GitHub"></a>
+                <a href="https://wa.me/qr/AFDQEH76EP5CO1" class="social-icon" title="Phone"><img src="./assests/whatsapp-logo.png" alt="WhatsApp"></a>
             </div>
         </div>
     </section>
 
-    <!-- Rest of your existing sections would go here -->
- 
-
     <section id="about" class="section-white">
         <div class="container">
-            <h2 class="section-title fade-in-up">About Me</h2>
-            <div class="about-content fade-in-up">
-                 <div class="hero-image-container">
-                    <div class="hero-image">
-                        <!-- Replace this emoji with an actual image when you have one -->
-                        <img src="/assests/./photo2.jpg" alt="Yash Goel">
-                        
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="hero-image-container" data-aos="fade-right" data-aos-offset="200">
+                    <div class="hero-image shadow-clip">
+                        <img src="./assests/photo2.jpg" alt="Yash Goel">
                     </div>
                 </div>
-                <div class="about-text">
-                    <p>Hi! I'm Yash Goel, a passionate Software Developer currently pursuing B.Tech in Information Technology at AKTU University (2023–2027). I specialize in full-stack development with strong expertise in the MERN stack, scalable backend systems, and modern web technologies.
-
-                    </p><br><p>I recently worked as an SDE Intern at Tekurious, where I built a Next.js platform integrating AI APIs with Redux Toolkit and shadcn/ui, optimizing workflows and enhancing the developer experience. I also completed the Goldman Sachs Virtual Internship on Forage, which gave me exposure to solving real-world engineering challenges.</p><br>
-                    </div>
+                <div class="about-text" data-aos="fade-left" data-aos-offset="200">
+                    <p>Hi! I'm Yash Goel, a Full Stack Developer specialized in engineering high-performance web applications and writing clean, scalable code. I look at software development through an runtime optimization lens—focusing on browser compilation mechanics, smooth rendering pipelines, and rigorous structural logic.</p>
+                    <br>
+                    <p>Currently executing technical components at Josh Technology Group, my portfolio extends through multiple engineering environments including full-stack MERN configurations, real-time WebSockets/WebRTC matrix channels, and dedicated IoT solutions like smart agriculture platforms.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="skills" class="section-gray">
         <div class="container">
-            <h2 class="section-title fade-in-up">Technical Skills</h2>
+            <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
             <div class="skills-grid">
-                <div class="skill-category fade-in-up">
+                <div class="skill-category" data-aos="zoom-in-up">
                     <h3>Programming Languages</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">JavaScript (ES6+)</span>
@@ -130,19 +117,18 @@
                         <span class="skill-tag">C</span>
                     </div>
                 </div>
-                <div class="skill-category fade-in-up">
-                    <h3>Frontend Development</h3>
+                <div class="skill-category" data-aos="zoom-in-up" data-aos-delay="100">
+                    <h3>Frontend Engineering</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">React.js</span>
                         <span class="skill-tag">Next.js</span>
-                        <span class="skill-tag">Redux</span>
+                        <span class="skill-tag">Redux Toolkit</span>
                         <span class="skill-tag">Tailwind CSS</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">HTML5 / CSS3 Architecture</span>
                     </div>
                 </div>
-                <div class="skill-category fade-in-up">
-                    <h3>Backend & Databases</h3>
+                <div class="skill-category" data-aos="zoom-in-up" data-aos-delay="200">
+                    <h3>Backend & Data Channels</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Node.js</span>
                         <span class="skill-tag">Express.js</span>
@@ -152,24 +138,22 @@
                         <span class="skill-tag">WebRTC</span>
                     </div>
                 </div>
-                <div class="skill-category fade-in-up">
-                    <h3>Tools & Technologies</h3>
+                <div class="skill-category" data-aos="zoom-in-up" data-aos-delay="300">
+                    <h3>Tools & Ecosystems</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Git & GitHub</span>
                         <span class="skill-tag">Postman</span>
                         <span class="skill-tag">Firebase</span>
                         <span class="skill-tag">Appwrite</span>
                         <span class="skill-tag">Cloudinary</span>
-                        <span class="skill-tag">JIRA</span>
                     </div>
                 </div>
-                <div class="skill-category fade-in-up">
-                    <h3>Core Concepts</h3>
+                <div class="skill-category" data-aos="zoom-in-up" data-aos-delay="400">
+                    <h3>Core Engineering</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Data Structures & Algorithms</span>
                         <span class="skill-tag">Object-Oriented Programming</span>
-                        <span class="skill-tag">JWT & OAuth</span>
-                        <span class="skill-tag">Scalable Architectures</span>
+                        <span class="skill-tag">JWT & OAuth Security</span>
                         <span class="skill-tag">Operating Systems</span>
                     </div>
                 </div>
@@ -179,9 +163,9 @@
 
     <section id="projects" class="section-white">
         <div class="container">
-            <h2 class="section-title fade-in-up">Featured Projects</h2>
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
             <div class="projects-grid">
-                <div class="project-card fade-in-up">
+                <div class="project-card" data-aos="fade-up">
                     <div class="project-image">🎓</div>
                     <div class="project-content">
                         <h3 class="project-title">GradWise</h3>
@@ -195,7 +179,7 @@
                         <a href="https://gradwise-client.vercel.app/" target="_blank" class="project-link">View Project →</a>
                     </div>
                 </div>
-                <div class="project-card fade-in-up">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="project-image">📹</div>
                     <div class="project-content">
                         <h3 class="project-title">Zoom Clone</h3>
@@ -209,7 +193,7 @@
                         <a href="https://github.com/yashgoel-711/ZOOM---Full-Stack" target="_blank" class="project-link">View Project →</a>
                     </div>
                 </div>
-                <div class="project-card fade-in-up">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="project-image">📝</div>
                     <div class="project-content">
                         <h3 class="project-title">Mega Blog</h3>
@@ -220,10 +204,10 @@
                             <span class="tech-tag">MongoDB</span>
                             <span class="tech-tag">Cloudinary</span>
                         </div>
-                        <a href="https://github.com/yashgoel-711/MegaBlog" target="_blank"  class="project-link">View Project →</a>
+                        <a href="https://github.com/yashgoel-711/MegaBlog" target="_blank" class="project-link">View Project →</a>
                     </div>
                 </div>
-                <div class="project-card fade-in-up">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="project-image">🎬</div>
                     <div class="project-content">
                         <h3 class="project-title">VideoTube</h3>
@@ -241,64 +225,64 @@
         </div>
     </section>
 
- <section id="experience" class="section-gray">
-    <div class="container">
-        <h2 class="section-title fade-in-up">Experience</h2>
-        <div class="experience-timeline">
+    <section id="experience" class="section-gray">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Experience</h2>
+            <div class="experience-timeline">
 
-            <!-- Tekurious -->
-            <div class="experience-item fade-in-up">
-                <div class="experience-dot"></div>
-                <div class="experience-content">
-                    <h3 class="experience-title">SDE Intern</h3>
-                    <p class="experience-company">Tekurious (Aug 2025 – Sep 2025)</p>
-                    <p class="experience-description">
-                        During my internship at Tekurious, I built a Next.js platform that integrated multiple AI APIs. 
-                        I implemented Redux Toolkit for efficient state management and used shadcn/ui to design a clean, 
-                        modular interface. I also worked on optimizing API workflows, making integrations smoother and 
-                        improving the overall developer experience.
-                    </p>
+                <div class="experience-item" data-aos="fade-left">
+                    <div class="experience-dot"></div>
+                    <div class="experience-content">
+                        <h3 class="experience-title">Frontend Developer</h3>
+                        <p class="experience-company">Josh Technology Group (JTG)</p>
+                        <p class="experience-description">
+                            Engineering optimized, high-performance client-side web applications. Focusing on browser compilation mechanics, interface component scalability, design system synchronization, and low-latency frontend architecture execution.
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Goldman Sachs -->
-            <div class="experience-item fade-in-up">
-                <div class="experience-dot"></div>
-                <div class="experience-content">
-                    <h3 class="experience-title">Virtual Internship</h3>
-                    <p class="experience-company">Goldman Sachs (May 2025)</p>
-                    <p class="experience-description">
-                        Completed a virtual internship through Forage where I worked on finance and engineering 
-                        simulations. The program exposed me to real-world problem-solving tasks, strengthening my 
-                        analytical and technical skills in a professional context.
-                    </p>
+                <div class="experience-item" data-aos="fade-left" data-aos-delay="100">
+                    <div class="experience-dot"></div>
+                    <div class="experience-content">
+                        <h3 class="experience-title">Full Stack Developer Intern</h3>
+                        <p class="experience-company">Infosys Springboard (Feb 2026 – Apr 2026)</p>
+                        <p class="experience-description">
+                            Spearheaded comprehensive end-to-end web system tracks during a focused engineering internship block. Maintained database reliability metrics, designed structural backend API contracts, and built scalable, responsive view spaces.
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Hackathon Team Lead -->
-            <div class="experience-item fade-in-up">
-                <div class="experience-dot"></div>
-                <div class="experience-content">
-                    <h3 class="experience-title">Team Lead</h3>
-                    <p class="experience-company">Team DOMinators</p>
-                    <p class="experience-description">
-                        Spearheaded development projects and managed agile sprints within the team. 
-                        Achieved Top 10 Finalist position at HackO'Clock 2025 among 500+ national teams 
-                        by building a student-centric solution in a 36-hour hackathon.
-                    </p>
+                <div class="experience-item" data-aos="fade-left" data-aos-delay="200">
+                    <div class="experience-dot"></div>
+                    <div class="experience-content">
+                        <h3 class="experience-title">SDE Intern</h3>
+                        <p class="experience-company">Tekurious (Aug 2025 – Jan 2026)</p>
+                        <p class="experience-description">
+                            Engineered an advanced Next.js platform integrating multiple machine-learning AI APIs. Managed global UI properties via Redux Toolkit and structured highly fluid visual modules using custom tokenized design frameworks.
+                        </p>
+                    </div>
                 </div>
-            </div>
 
+                <div class="experience-item" data-aos="fade-left" data-aos-delay="300">
+                    <div class="experience-dot"></div>
+                    <div class="experience-content">
+                        <h3 class="experience-title">Engineering Team Lead</h3>
+                        <p class="experience-company">Team DOMinators</p>
+                        <p class="experience-description">
+                            Directed accelerated development strategies and software sprints across national competitions. Achieved Top 10 National Finalist rank at HackO'Clock out of 500+ engineering entries by executing production-ready client solutions within 36 hours.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
-</section>
-
+    </section>
 
     <section id="contact" class="section-white">
         <div class="container">
-            <h2 class="section-title fade-in-up">Get In Touch</h2>
-            <div class="contact-content fade-in-up">
-                <p>I'm actively seeking software development internship opportunities! Whether you have an exciting project, internship position, or just want to connect, I'd love to hear from you.</p>
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="contact-content" data-aos="zoom-in">
+                <p>I'm always open to discussing web performance internals, open-source architectures, or unique engineering initiatives. Let's build something exceptional together.</p>
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-item-icon">📧</div>
@@ -313,7 +297,7 @@
                     <div class="contact-item">
                         <div class="contact-item-icon">📍</div>
                         <h3>Location</h3>
-                        <p>Shalimar Garden, Delhi-NCR</p>
+                        <p>Delhi-NCR, India</p>
                     </div>
                 </div>
             </div>
@@ -323,28 +307,23 @@
     <footer class="footer">
         <div class="container">
             <div class="floating-elements">
-              <div class="floating-element"></div>
-              <div class="floating-element"></div>
-              <div class="floating-element"></div>
-              <div class="floating-element"></div>
-              <div class="floating-element"></div>
-              <div class="floating-element"></div>
-              <div class="floating-element"></div>
-              <div class="floating-element"></div>
-              <div class="floating-element"></div>
-          </div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+            </div>
             
             <div class="social-links">
-                  <a href="mailto:yashgoel711@gmail.com" class="social-icon" title="Email"><img width="55px"  src="./assests/email-logo-png-13.png" alt=""></a>
-                <a href="https://www.linkedin.com/in/yash-goel-65aa64273/" class="social-icon" title="LinkedIn"><img width="60px"  src="./assests/linkedin-logo-linkedin-icon-transparent-free-png.webp" alt=""></a>
-                <a href="https://github.com/yashgoel-711" class="social-icon" title="GitHub"><img width="55px"  src="./assests/github_PNG80.png" alt=""></a>
-                <a href="https://wa.me/qr/AFDQEH76EP5CO1" class="social-icon" title="Phone"><img width="70px"  src="./assests/WhatsApp-logo.png" alt=""></a>
-            
+                <a href="mailto:yashgoel711@gmail.com" class="social-icon" title="Email"><img src="./assests/email-logo.png" alt="Email"></a>
+                <a href="https://www.linkedin.com/in/yash-goel-65aa64273/" class="social-icon" title="LinkedIn"><img src="./assests/linkedin-logo.png" alt="LinkedIn"></a>
+                <a href="https://github.com/yashgoel-711" class="social-icon" title="GitHub"><img src="./assests/github-logo.png" alt="GitHub"></a>
+                <a href="https://wa.me/qr/AFDQEH76EP5CO1" class="social-icon" title="Phone"><img src="./assests/whatsapp-logo.png" alt="WhatsApp"></a>
             </div>
-            <p>&copy; 2025 Yash Goel. All rights reserved.</p>
+            <p>&copy; 2026 Yash Goel. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
